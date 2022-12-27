@@ -7,4 +7,4 @@ if [ "$NODE_ENV" = "production" ]; then
 else
   npx knex --knexfile config/knexfile.js migrate:latest
   npx nodemon lib/server.js | npx pino-pretty -c -t
-fi  
+fi
